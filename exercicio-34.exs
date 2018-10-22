@@ -11,10 +11,6 @@ defmodule ListRemove do
   end
 
   def remove_list(employee) do
-    number = Enum.count(employee)
-    IO.puts("There are #{number} employees:")
-    IO.puts(Enum.each(employee, fn x -> IO.puts(x) end))
-
     if Enum.count(employee) > 0 do
       number = Enum.count(employee)
       IO.puts("There are #{number} employees:")

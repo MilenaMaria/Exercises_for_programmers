@@ -1,23 +1,23 @@
 # Computing Statistics
 defmodule ComputingStatistics do
   def run do
-    read_names(1, [])
+    read_names([])
   end
 
-  def read(_n) do
+  def read() do
     IO.gets("Enter a number:")
     |> String.trim()
 
     # |> String.to_integer()
   end
 
-  def read_names(atual, numbers) do
-    number = read(atual)
+  def read_names(numbers) do
+    number = read()
 
     if number != "done" do
       a = number |> String.to_integer()
       numbers = [a | numbers]
-      read_names(atual + 1, numbers)
+      read_names(numbers)
     else
       calc(numbers)
     end
@@ -35,6 +35,7 @@ defmodule ComputingStatistics do
     IO.puts("The average is #{avg}.")
     IO.puts("The minimum is #{min}.")
     IO.puts("The maximum is #{max}.")
+    # IO.puts("The standard deviation is #{desvio}.")
   end
 end
 

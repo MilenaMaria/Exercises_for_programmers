@@ -1,12 +1,9 @@
-defmodule Users do
-  @pass 11
-  user = %{name: "Dave", pass: 11}
-
-  case user do
-    %{name: some_pass} == @pass ->
-      IO.puts("#{person.name} lives in #{some_state}")
-
-    _ ->
-      IO.puts("No matches")
+defmodule Example do
+  def read_file(file) do
+    if File.exists?(file) do
+      File.read!(file) |> IO.inspect()
+    end
   end
 end
+
+Example.read_file("test.txt")

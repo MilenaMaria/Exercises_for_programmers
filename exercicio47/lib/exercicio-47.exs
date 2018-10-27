@@ -11,12 +11,12 @@ defmodule WhosSpace do
   end
 
   defp print(people) do
-    IO.puts("Name                      | Craft")
-    IO.puts("--------------------------|------")
+    IO.puts("Name                    | Craft")
+    IO.puts("------------------------|------")
 
     people
     |> Map.fetch!("people")
-    |> Enum.each(&IO.puts("#{String.pad_trailing(&1["name"], 25)} | #{&1["craft"]}"))
+    |> Enum.each(&IO.puts("#{String.pad_trailing(&1["name"], 23)} | #{&1["craft"]}"))
   end
 end
 

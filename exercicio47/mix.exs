@@ -23,6 +23,10 @@ defmodule Exercicio47.MixProject do
     [
       {:tesla, "~> 1.2.0"},
       {:jason, "~> 1.1"}
+      # {:ecto, "~> 2.0"},
+      # {:postgrex, "~> 0.11"},
+      # {:plug_cowboy, "~> 2.0"},
+      # {:cowboy, "~> 2.5"}
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
     ]

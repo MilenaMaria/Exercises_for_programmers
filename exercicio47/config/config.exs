@@ -3,6 +3,7 @@
 use Mix.Config
 
 config(:exercicio47, clima: "eeb559632fda0d30d553ea33145865b1")
+config(:exercicio47, api_key: "31a5fe031808c54e518f83af9156b41a")
 
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
